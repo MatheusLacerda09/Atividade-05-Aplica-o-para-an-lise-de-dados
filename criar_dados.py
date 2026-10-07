@@ -22,7 +22,6 @@ df_transacoes = pd.concat([df_transacoes, df_transacoes.iloc[:15]], ignore_index
 df_transacoes.to_csv('transacoes.csv', index=False, encoding='latin1')
 
 
-# 2. GERAÇÃO DO ARQUIVO: cotacoes.csv ---
 datas_cotacoes = pd.date_range(start='2026-09-01', end='2026-10-01', freq='D')
 
 variacoes = np.random.normal(loc=0.001, scale=0.015, size=len(datas_cotacoes))
