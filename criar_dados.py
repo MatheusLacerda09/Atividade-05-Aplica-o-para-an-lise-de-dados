@@ -3,7 +3,6 @@ import numpy as np
 
 np.random.seed(42)
 
-# --- 1. GERAÇÃO DO ARQUIVO: transacoes.csv ---
 datas_transacoes = pd.date_range(start='2026-09-01', periods=1000, freq='h')
 
 df_transacoes = pd.DataFrame({
